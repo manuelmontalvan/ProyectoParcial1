@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name ="description" content="ejemplos de HTML5">
+   <meta name ="Keywords" content=" HTML5,CSS3,Javascript">
+   <title> Proyecto</title>
+   <link rel="stylesheet" href="estilos.css">
+  
+</script>
+  
+  <style>
+       
+      
+       h2{
+           text-align: center;
+       }
+       .certificados{
+           text-align: center;
+       }
+       .menu{
+           list-style: none;
+           margin:auto;
+          
+           max-width: 1600px;
+       
+           background-color:  #244169;
+           
+           
+          
+       }
+       .formularios #formContacto{
+          
+           background-color: rgba(0, 208, 255, 0.738);
+           border: 3px black;
+           text-align: center;
+           font-weight: bold;
+           width: 50%;
+           
+           
+       }
+      
+       .menu li {
+        display: inline-block;
+        text-align:center ;
+        
+
+       }
+       .text-center{
+           text-align: center;
+       }
+     
+      .menu li a{
+          text-decoration: none;
+          color: white;
+          padding: 20px;
+          display:block;
+      }
+      .colunm1 #parrafo{
+          color: black;
+      }
+      .menu li a:hover{
+          background: white;
+         color:black;
+        }
+      .listado{
+        list-style: none;
+        margin-left: auto;
+       
+        padding: 10px;  
+      }
+      .columna1 #parrafo{
+           font-family: 'Courier New', Courier, monospace;
+           
+           
+           
+        }
+      
+      .listado li{
+        display: block;
+      padding-block: 10px;
+        text-decoration: none;
+        border: 1px solid skyblue;
+        border-radius: 10px;
+      font-size: 15px;
+      background-color: silver;
+      color: white;
+      width: 20%;
+      font-family: 'Courier New', Courier, monospace;
+      }
+      .imagen{
+          text-align: center;
+      }
+      
+
+   </style>
+
+
+</head>
+
+<body>
+    
+   
+<header >
+    
+    <div class="cabecera">
+     
+       
+        <span class="imagen">
+            <img src="form.png" alt="portada" width="150" height="100"  />
+       
+        </span>
+    </div>
+   
+  
+</header>
+
+
+
+<nav>
+    <ul class="menu">
+        
+         <li><a href="plantilla.html">Inicio</a> </li>
+        <li><a href="#">Servicio</a></li>
+        <li><a href="LamillaVerakevin.html">Contacto</a> </li>
+        <li><a href="#">Trabaja con nosotros</a> </li>
+        <li><a href="#">Cotiza aqui</a> </li>
+  
+    </ul>
+</nav>
+<main>
+    <div id="formulario"onmouseover="cambiar()"onmouseout="quitar()">
+        <h3>
+           Formulario 
+        </h3>
+    </div>
+    <div id="contenido">
+
+    </div>
+   
+    <div id="contenedorPrincipal">
+     
+        <div class="titulo">
+            
+        </div>
+        <div id="contenedorContenido">
+            
+            <hr>
+
+            <div class="formularios">
+                <!-- onsubmit=return validar() PERMITE LLAMAR A LA FUNCION DE JAVASCRIPT QUE VALIDA EL FORMULARIO-->
+                <form id="formContacto">
+
+                    <div>
+                        <br>
+                        <label>Fecha de Nacimiento:</label>
+                        <input type="date" name="fecha" id="fecha" class="formItem" />
+                    </div>
+                    <div>
+                        <br>
+                        <label>Cedula:</label>
+                        <input type="text" name="cedula" id="cedula" class="formItem" placeholder="Ingrese aqui su cedula"/>
+                        <br>
+                    </div>
+                    <div>
+                        <br>
+                        <label>Nombres:</label>
+                        <input type="text" name="nombres" id="nombres" class="formItem" placeholder="Ingrese aqui tu nombre"/>
+                  
+                    </div>
+                    <div>
+                        <br>
+                        <label>Apellidos:</label>
+                        <input type="text" name="apellidos" id="apellidos" class="formItem" /><br>
+                    </div>
+                    <div>
+                        <br>
+                        <label>Telefono:</label>
+                        <input type="text" name="telefono" id="telefono" class="formItem" maxlength="10" />
+                   
+                    </div>
+                    <div>
+                        <br>
+                        <label>Email:</label>
+                        <input type="email" name="correo" id="correo" class="formItem" />
+                    </div>
+                   
+                    <div> 
+                        <br>
+                        <label>Genero:</label>
+                        <input class="gen" id="fem" type="radio" name="genero" id="g1" value="F" />Femenino
+                        <input class="gen" id="mas" type="radio" name="genero" id="g2" value="M" />Masculino
+                        <input class="gen" id="otro" type="radio" name="genero" id="g3" value="O" />Otro
+                    </div>
+                    <div>
+                        <br>
+                        <label>Sector Laboral:</label>
+                        <select name="estadoC" id="estadoC" class="formItem">
+                            <option value="0">Seleccione..</option>
+                            <option value="1">Hospitalario</option>
+                            <option value="2">Industrial</option>
+                            <option value="3">Comercial</option>
+                            <option value="4">Corporativos</option>
+                        </select>
+
+                    </div>
+
+                    <div>
+                        <br>
+                        <label>Pagina  que le parecio màs atractiva:</label> </br>
+                        <br> Inicio <input type="checkbox" name="suscripcion1" value="1" id="suscripcion1"
+                            class="formItem sus principal" />
+                            <br> Servicio <input type="checkbox" name="suscripcion2" value="2" id="suscripcion2"
+                            class="formItem sus" />
+                            <br> Contacto <input type="checkbox" name="suscripcion3" value="3" id="suscripcion3"
+                            class="formItem sus" />
+                            <br>Trabaja con nosotros <input type="checkbox" name="suscripcion4" value="4" id="suscripcion4"
+                            class="formItem sus" />
+                            <br>Cotiza aquì <input type="checkbox" name="suscripcion4" value="4" id="suscripcion4"
+                            class="formItem sus" />
+
+                    </div>
+                  
+
+                    <div>
+
+                        <br>
+                        <label>Sugerencias:</label> <br>
+                        <textarea class="form-control" id="texto" rows="4" cols="50" class="formItem"></textarea>
+                    </div>
+                    <div class="text-center">
+                        <br>
+                        <input type="submit" class="btn btn-primary" value="Enviar">
+                        </div>
+
+                </form>
+
+            </div>
+        </div>
+        
+    </div>
+   
+    <script type="text/javascript" src="val.js">
+    </script>
+   
+    </main>
+    <footer>
+       
+        <div class="container-footer-all">
+
+        
+       <div class="container-body">
+         <div class="colunm1">
+            <h5> Mas informacion de la compania<br></h5>
+            <p>Mr. Cleanning es una pagina web de  Limpieza y Mantenimiento  desarrollada por estudiantes de la Universidad de Guayaquil.</p>
+         </div>
+          
+           <div class="colunm2">
+            <h5>Redes sociales </h5>
+            <div class="row">
+                <img src="fcbk.png" alt="facebok" width="50" height="50"/>
+                <label>Siguenos en facebook</label>
+            </div>
+            <div class="row">
+                <img src="insta.jpeg" alt="insta" width="50" height="50"/>
+                <label>Siguenos en instagram</label>
+            </div>
+            <div class="row">
+                <img src="wasap.png" alt="wasap" width="50" height="50"/>
+                <label>Siguenos en whatssapp</label>
+            </div>
+        </div>
+
+            <div class="colunm3">
+                <h5>Informacion con datos</h5>
+                 <div class="row2">
+                    <img src="ubicacion.jpeg" alt="ubicacion" width="50" height="50"/>
+              
+                  <label>Gomez Rendon 2342 y Rumichaca</label>
+                 </div>
+                 <div class="row2">
+                    <img src="telefono.jpeg" alt="telefono" width="50" height="50"/>
+              
+                    <label>+593-90070097</label>
+                   </div>
+                 <div class="row2">
+                    <img src="correo.jpeg" alt="correo" width="50" height="50"/>
+              
+                    <label>mrcleanning@gmail.com</label>
+                   </div>
+            </div>
+       
+        
+        </div>
+
+
+      
+
+
+     
+
+    </div>
+    <div class="container-footer"> 
+      <div class="footer">
+        <div class="copyrigth">
+          Elaborado por:Ronald Preciado |<a ></a>
+        </div>
+        <div class=" information">
+            <a href="">Informacion de compañia</a>|
+            <a href="">Privacidad y Politica |Terminos y condiciones</a>
+
+        </div>
+      </div>
+        
+
+      </div>
+       
+   
+    </footer>
+    <script  type="text/javascript">
+        
+        function cambiar(){
+          const parrafo = document.getElementById('contenido')
+          const p = document.createElement('p')
+          p.innerHTML='<b>Cuentenos su experiencia al navegar en nuestra pagina</b>'
+          parrafo.appendChild(p);
+         
+        }
+        function quitar(){
+            let div =document.getElementById("contenido");
+            while (div.hasChildNodes()) {
+                    div.removeChild(div.firstChild);
+                }
+             
+    
+          }
+        
+        
+       
+        
+    
+      </script>
+    
+</body>
+</html>
+
+
+

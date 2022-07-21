@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="ejemplos de HTML5">
+    <meta name="Keywords" content=" HTML5,CSS3,Javascript">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <title> Proyecto</title>
+    <script type="text/javascript" src="validaciones.js"></script>
+    <link rel="stylesheet" href="EstiloKevin.css">
+    <style>
+        .headerNegro {
+            background-color: black;
+        }
+
+        .alinearCentradoY {
+            display: flex;
+            align-items: center;
+        }
+
+        * {
+            font-family: inherit;
+        }
+
+        .enlaces {
+            text-decoration: none;
+            color: white;
+        }
+
+        .enlaces:hover {
+            color: #f05023
+        }
+
+        .contactanos {
+            display: inline-block;
+            padding: 70px;
+
+
+        }
+
+        form {
+            background: white;
+            padding: 10px;
+            width: 300px;
+            margin: 0 auto;
+            border-radius: 3px;
+            font-size: 16px;
+            color: rgb(46, 120, 150);
+        }
+
+        textarea {
+            outline: none;
+            border: 0;
+        }
+
+        .field {
+            border: solid 1px #999;
+            padding: 10px;
+            width: 250px;
+        }
+
+        .field:focus {
+            border-color: #E98214;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .certificados {
+            text-align: center;
+        }
+
+        .menu {
+            list-style: none;
+            margin: auto;
+            width: 90%;
+            max-width: 1000px;
+
+            background-color: skyblue;
+
+
+
+        }
+
+        .menu li {
+            display: inline-block;
+            text-align: center;
+
+
+        }
+
+        .menu li a {
+            text-decoration: none;
+            color: white;
+            padding: 20px;
+            display: block;
+        }
+
+        .colunm1 #parrafo {
+            color: black;
+        }
+
+        .menu li a:hover {
+            background: white;
+            color: black;
+        }
+
+        .listado {
+            list-style: none;
+            margin-left: auto;
+
+            padding: 10px;
+        }
+
+        .columna1 #parrafo {
+            font-family: 'Courier New', Courier, monospace;
+
+
+
+        }
+
+        .listado li {
+            display: block;
+            padding-block: 10px;
+            text-decoration: none;
+            border: 1px solid skyblue;
+            border-radius: 10px;
+            font-size: 15px;
+            background-color: silver;
+            color: white;
+            width: 20%;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .imagen {
+            text-align: center;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <header>
+        <h1 style=" text-align: center;">Proyecto </h1><br>
+        <div class="cabecera">
+
+
+            <span class="imagen">
+                <img src="Imagen/clean.webp" alt="portada" width="250" height="200" />
+
+            </span>
+        </div>
+
+
+    </header>
+
+
+
+    <nav>
+        <ul class="menu">
+            <li><a href="plantilla.html">Inicio</a> </li>
+            <li><a href="servicios.html">Servicio</a></li>
+            <li><a href="Contactanos.html">Contacto</a></li>
+           
+            <li><a href="cotiza.html">Cotiza aqui</a> </li>
+
+        </ul>
+    </nav>
+    <div>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15947.906863242224!2d-79.9303861921875!3d-2.162562499999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d6f976b720bd7%3A0x522380402fac9d90!2sCLEAN%20CLOTHES%20LAVANDER%C3%8DA!5e0!3m2!1ses!2sec!4v1656465143005!5m2!1ses!2sec"
+            width="1350" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+
+    <div class="servicio" style="display:flex;">
+        <div class="contactanos">
+         
+            <h3>ENVÍANOS TUS PREGUNTAS</h3>
+            
+            <p style="font-size:12px">Los campos marcados con * son obligatorios</p>
+            <div class="formularios">
+                <form id="formContacto" onsubmit="return validar()">
+
+                    <p>Nombres*
+                        <input type="text" name="nombres" id="nombres" class="field">
+                    </p>
+
+                    <p>Email*
+                        <input type="text" name="email" id="email" class="field">
+                    </p>
+
+                    <p>Telefono*
+                        <input type="text" name="telefono" id="telefono" class="field">
+                    </p>
+
+                    <p>Empresa
+                        <input type="text" class="field">
+                    </p>
+
+                    <p>Asunto*
+                        <input type="text" name="asunto" id="asunto" class="field">
+                    </p>
+
+                    <p>Genero
+                        <input class="gen" id="fem" type="radio" name="genero" id="g1" value="F" />Femenino
+                        <input class="gen" id="mas" type="radio" name="genero" id="g2" value="M" />Masculino
+                        <input class="gen" id="otro" type="radio" name="genero" id="g3" value="O" />Otro
+                    </p>
+
+                    <p>Nos recomendarias ?
+                        <select name="estadoC" id="estadoC" class="formItem">
+                            <option value="0">Seleccione..</option>
+                            <option value="1">SI</option>
+                            <option value="2">NO</option>
+                           
+                        </select>
+                    </p>
+
+                    <p> Por cual de los siguientes medios nos encontrastes ?
+                        <br> FACEBOOK<input type="checkbox" name="SELECCION1" value="1" id="SELECCION1"
+                        class="formItem sus principal" />
+                        <br> INSTAGRAM<input type="checkbox" name="SELECCION2" value="2" id="SELECCION2"
+                        class="formItem sus" />
+                        <br> TIKTOK <input type="checkbox" name="SELECCION3"value="3" id="SELECCION3"
+                        class="formItem sus" />
+                        <br> TWITTER <input type="checkbox" name="SELECCION4" value="4" id="SELECCION4"
+                        class="formItem sus" />
+                        <br>TELEGRAM<input type="checkbox" name="SELECCION5"value="4" id="SELECCION5"
+                        class="formItem sus" />
+                    </p>
+                    <p>Mensaje
+                        <textarea class="field"></textarea>
+                    </p>
+
+                    <input type="submit" value="ENVIAR" id="boton">
+
+                    <p class="warnings" id="warnings"></p>
+
+                </form>
+            </div>
+        </div>
+
+        <section>
+            <p style="font-family: 'Courier New', Courier, monospace;"><b>Contactanos </b> </p>
+                           
+            <div class="container-main">
+                <div class="container1">
+                    <div id="columna1" >
+                        <div id ="parrafo" style="margin: 2px;"onclick="cambiar()" onmouseout="quitar()" >
+                          
+                            <i><b> Trabajamos duro para limpiar tu casa</b> </i>
+                            <p>  Nuestros productos estan 100% probados por los mejores especialistas de limpieza </p>
+                            <p>Contáctanos y te haremos llegar enseguida nuestro producto , nuestro tiempo de respuesta es de 1:00 Hora, podrás disfrutar de una limpieza rápida y eficaz, en cualquier parte de la ciudad</p>
+                         
+                         
+                        </div>
+                      
+                         
+                    </div>
+                    <div class="column2">
+                    <div style="text-align: right;">
+                        <img src="Imagen/Contactanos.png" alt="Contactanos" width="300" height="200"/>
+             
+                    </div>
+                       
+    
+                    </div>
+                   
+                </div>
+              
+    
+            </div>
+            <div id="contenido">
+    
+    
+            </div>
+          
+                
+        </section>
+
+        <div class="contactanos">
+            <h3> CONTÁCTANOS - MR CLEAN </h3>
+            <img src="Imagen/IMG.jpg">
+        </div>
+    </div>
+
+    
+
+
+    <footer class="footer-container" style="display:block;">
+        <div class="row">
+            <div class="elemento col-md-1">
+            </div>
+            <div class="elemento col-md-4">
+                <div class="footer-logo" style="max-width: 80%; margin-bottom: 10px;">
+                    <img src="Imagen/clean.webp" alt="Logo" width="250" height="200" />
+                    <p style="text-align: justify; color:rgb(31, 7, 7);">
+                        "Somos una empresa dedicada a la comercializaci&oacute;n y distribuci&oacute;n de
+                        productos de limpieza </p>
+                    <div style="line-height: 2; text-align: justify; color:rgb(48, 11, 11);">
+                        <i class="fa">
+                        </i>
+                        Direcci&oacute;n: Avenida Juan Montalvo Cdla La Alegria
+                        Unidas Centro Comercial Caracol local 98
+                        <br>
+                        <i class="fa">
+                        </i>
+                        Tel&eacute;fono: +593 0983054921
+                        <br>
+                        <i class="fa">
+                        </i>
+                        Email: MrClean@orgClean.com
+                    </div>
+                </div>
+            </div>
+            <div id="elemento2" class="elemento col-md-3">
+                <h5 class="widget-title"> BLOGS RECIENTES </h5>
+                <p id="parf">
+                    Nueva Secci&oacute;n 2022 </p>
+                <p id="parrf"> 28, 2022</p>
+                <p style="color:rgb(24, 38, 58); font-size: 12px;"> No comments </p>
+            </div>
+            <div class="elemento col-md-4">
+                <h5 class="widget-title"> ENLACES &Uacute;TILES </h5> <br>
+                <a class="enlacesF" href=" "> Pol&iacute;ticas de Privacidad </a> <br> <br>
+                <a class="enlacesF" href=" "> T&eacute;rminos y Condiciones </a> <br> <br>
+                <a class="enlacesF" href=" "> Cont&aacute;ctanos </a> <br> <br>
+                <a class="enlacesF" href=" "> Preguntas Frecuentes </a> <br> <br>
+                
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="elemento col-md-1">
+            </div>
+            <div class="elemento col-md-4">
+                <p style="color: rgb(20, 72, 104); font-weight: lighter;"> © Mr Clean 2022 . Todos los Derechos
+                    Reservados </p>
+            </div>
+        </div>
+    </footer>
+    <script  type="text/javascript">
+        console.log(document.querySelector('.menu'))
+        console.log(document.querySelector('#parrafo'))
+        function cambiar(){
+          const parrafo = document.getElementById('contenido')
+          const p = document.createElement('p')
+          p.style.background='blue'
+          p.style.color='white'
+          
+          p.innerHTML='<b>Toda la informacion escrita en este articulo esta reservado por derechos de autor - Si deseas copiar nuestra informacion solicitar a nuestro administrador : Kevin Lamilla </b>'
+          parrafo.appendChild(p);
+         
+        }
+        function quitar(){
+          let div =document.getElementById("contenido");
+                while (div.hasChildNodes()) {
+                        div.removeChild(div.firstChild);
+                    }
+    
+          }
+        
+          function aqui(){
+           const aqui= document.querySelector('h2');
+                aqui.style.background='gray';
+            aqui.style.color='white';
+            
+        
+           
+    
+          }
+          function deshacer(){
+           const aqui= document.querySelector('h2');
+            aqui.style.background='white';
+            aqui.style.color='black';
+            
+          
+    
+          }
+    
+      </script>
+
+</body>
+
+</html>

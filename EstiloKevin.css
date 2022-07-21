@@ -1,0 +1,251 @@
+.nave{
+    text-decoration: none;
+    font-size: large;
+    padding: 0.5%;
+    color: white;
+    font-weight: bold;
+}
+
+.nave:hover{
+    color: #FF4B06;
+    font-weight: normal;
+}
+
+.dropdown-container{
+    position: relative;
+    display: inline;
+
+}
+
+.dropdown-container ul{
+    border-style: solid;
+    border-color: #000000;
+    position: absolute;
+    max-height: 0%;
+    overflow: hidden;
+    margin: 0%;
+    padding: 0%;
+}
+
+.dropdown-container li{
+    border:1px;
+    border-style: solid;
+    border-color: #FF4B06;
+    list-style: none;
+    
+}
+
+.enlacesNav{
+    display: block;
+    background-color: antiquewhite;
+    color: black;
+    text-decoration: none;
+}
+
+.enlacesNav:hover{
+    background-color: #dadada;
+    color: #000000;
+}
+
+.dropdown-container:hover ul{
+    max-height:fit-content;
+}
+
+
+
+.website-wrapper{
+    position: relative;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.encabezado{
+	background-color: black;
+	position: relative;
+}
+
+.encabezado_logo{
+	display: inline-block;
+}
+
+.searchform{
+	position: relative;
+    
+}
+
+.searchform input[type=text] {
+	background-color: white;
+	font-size: 15px;
+	height: 46px;
+	width: 100%;
+	max-width: 100%;
+	border: 2px solid rgba(252, 175, 23, .75);
+	vertical-align: middle;
+	padding: 0 15px;
+}
+
+.whb-column .woodmart-search-form input[type=text] {
+	min-width: 290px;
+}
+
+input {
+display: inline-block;
+}
+
+#par1{
+	color: white;
+	text-align: right;
+}
+
+.footer-container{
+	background-color: black;
+}
+
+img.logo{
+	min-height: 1px;
+	vertical-align: middle;
+	height: auto;
+	max-width: 100%
+}
+
+.widget_title{
+	font-family: Poppins;
+	font-weight: 600;
+	color: #777;
+}
+
+#parrf{
+	text-align: left;
+	color:white;
+	font-size: 12px;
+}
+
+#elemento2{
+    text-align: left;
+}
+
+#body{
+	font-weight: bold;
+	font-size: 20px;
+	text-align: center;
+	color: rgba(0, 0, 0, 0.8);
+	font-family: Verdana; 
+}
+
+#imagen{
+	border-radius: 4px;
+	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+}
+
+.alinearCentradoY{
+    display: flex;
+    align-items: center;
+}
+
+.tituloS{
+	font-size: 48px;
+	font-weight: bold;
+	text-align: center;
+	color: black;
+}
+
+.tituloP{
+	font-size: 48px;
+	font-weight: bold;
+	color: black;
+}
+
+ .enlaces{
+    text-decoration: none;
+    color: white;
+}
+
+#enlaceP{
+	color: white;
+	text-decoration: none;
+	text-align: center;
+}
+
+.enladesPrincipales{
+	text-align: center;
+}
+
+.enladesPrincipales:hover{
+	color:ff6c2f;
+}
+
+#textBody{
+	color: #777;
+	text-align: center;
+	font-family: inherit;
+	font-size: 14px;
+}
+
+#parrafo{
+	font-size: 22px;
+	color: #777;
+	font-family: inherit;
+	font-weight: lighter;
+	font-style: italic;
+}
+
+
+
+#parrafo-body{
+	text-align: justify;
+	font-size: 14px;
+	width: 400px; 
+}
+
+.enlacesF{
+	color: rgb(66, 27, 71);
+	text-decoration: none;
+}
+
+.footer-container{
+    width: 100%;
+    padding-top:40px;
+    padding-left: 20px;
+    background:#69a4f0;
+    margin:auto;
+   
+    
+}
+
+
+.grid div.servicio{
+	display:grid;
+	grid-template-columns:50% 50%;
+	margin:0px;
+	padding:0px;
+}
+
+div.campos{
+	width:10px;
+	margin-bottom:20px;
+}
+
+div.elmento.col-md-4{
+	flex: 0 0 auto;
+	width: 33.3333333333%;
+}
+
+
+input#boton{
+	padding:5px 50px;
+	color:white;
+	font-size:1em;
+	background-color:#1E1C1B;
+	border:0px;
+	font-size:18px;
+	
+	
+	
+}
+input#boton:hover{
+	background-color:#4F4541;
+}
+
+

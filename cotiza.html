@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name ="description" content="ejemplos de HTML5">
+   <meta name ="Keywords" content=" HTML5,CSS3,Javascript">
+   <title> Proyecto</title>
+   <link rel="stylesheet" href="estilos.css">
+   <style>
+       h2{
+           text-align: center;
+       }
+       .certificados{
+           text-align: center;
+       }
+       .clientes{
+           text-align: center;
+       }
+       .menu{
+           list-style: none;
+           margin:auto;
+           width: 90%;
+           max-width: 1000px;
+           padding: auto;
+           background-color:  skyblue;
+
+
+
+       }
+       .menu li {
+        display: inline-block;
+        text-align:center ;
+
+
+       }
+       .tabla{
+           text-align:'Courier New', Courier, monospace;
+
+       }
+      .menu li a{
+          text-decoration: none;
+          color: white;
+          padding: 20px;
+          display:block;
+      }
+      .colunm1 #parrafo{
+          color: black;
+      }
+      .menu li a:hover{
+          background: white;
+         color:black;
+        }
+      .listado{
+        list-style: none;
+        margin-left: auto;
+
+        padding: 10px;
+      }
+      .columna1 #parrafo{
+           font-family: 'Courier New', Courier, monospace;
+        }
+      .listado li{
+        display: block;
+        padding-block: 10px;
+        text-decoration: none;
+        border: 1px solid skyblue;
+        border-radius: 10px;
+      font-size: 15px;
+      background-color: silver;
+      color: white;
+      font-family: 'Courier New', Courier, monospace;
+      }
+      .imagen{
+          text-align: center;
+      }
+      .container{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+.box{
+    border: solid #6563e6 5px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width:25rem;
+    min-width:18rem;
+    margin: 10px;
+    text-align: center;
+
+}
+.modal {
+display: none;
+position: fixed;
+z-index: 1;
+padding-top: 100px;
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+overflow: auto;
+background-color: rgb(0,0,0);
+background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+background-color: #fefefe;
+margin: auto;
+padding: 20px;
+border: 1px solid #888;
+width: 80%;
+}
+
+.close {
+color: #aaaaaa;
+float: right;
+font-size: 28px;
+font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+color: #000;
+text-decoration: none;
+cursor: pointer;
+}
+button {
+  background-color: #6563e6;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+select {
+  width: 100%;
+  padding: 16px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+}
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
+}
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+input[type=email]{width: 100%;
+padding: 12px 20px;
+margin: 8px 0;
+box-sizing: border-box;}
+
+   </style>
+<title>Proyecto</title>
+
+</head>
+<body>
+<header >
+    <span class="cabecera">
+        <h1 style=" text-align: center;"  >Proyecto Grupo #4 </h1><br>
+        <div class="imagen">
+            <img src="Imagen/clean.webp" alt="portada" width="250" height="200"  />
+
+        </div>
+    </span>
+
+
+</header>
+
+
+
+<nav>
+    <ul class="menu">
+        <li><a href="plantilla.html">Inicio</a> </li>
+        <li><a href="servicios.html">Servicio</a></li>
+        <li><a href="LamillaVerakevin.html">Contacto</a> </li>
+        <li><a href="Cotiza">Cotiza aqui</a> </li>
+
+    </ul>
+</nav>
+<div>
+  <h2 style="text-align:center">Plan de Costos</h2>
+</div>
+<div class="container">
+
+        <div class="box">
+            <img style="width:100%;height:auto;"src="https://mrbutler.com.ph/wp-content/uploads/elementor/thumbs/subscription-cleaning-services-p0msondic44bhrcq8vxuiimlun9ssbcc7vgsov1xq8.png">
+            <h1>Plan basico</h1>
+            <ul style="list-style-type: square;">
+              <li style="text-align: left;">Servios de limpieza</li>
+              <li style="text-align: left;">Recoleccion de residuos</li>
+              <li style="text-align: left;">Limpieza de canales</li>
+            </ul>
+
+
+        </div>
+        <div class="box">
+            <img style="width:100%;height:auto;"src="https://www.cleaning-legacy.com/wp-content/uploads/2015/01/biweekly-house-cleaning-service-subscription-500x500.png">
+            <h1>Plan Silver</h1>
+            <ul style="list-style-type: square;">
+              <li style="text-align: left;">Incluye los benficios del plan anterior</li>
+              <li style="text-align: left;">Servicios de limpieza de residuos quimicos domesticos</li>
+            </ul>
+
+
+        </div>
+        <div class="box">
+            <img style="width:100%;height:auto;"src="https://www.cleaning-legacy.com/wp-content/uploads/2015/01/biweekly-house-cleaning-service-subscription-500x500.png">
+            <h1>Plan Gold</h1>
+            <ul style="list-style-type: square;">
+              <li style="text-align: left;">Incluye los benficios del plan anterior</li>
+              <li style="text-align: left;">Servicios de limpieza a vapor</li>
+            </ul>
+
+      </div>
+      </div>
+      <div >
+        <button id="myBtn">Video demostrativo</button>
+
+        <div id="myModal" class="modal">
+
+        <div class="modal-content" >
+              <span class="close" >×</span>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/XMWYZ-uZjnQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="display: flex;align-items: center;justify-content: center;"></iframe>
+        </div>
+
+        </div>
+        <script>
+
+        var modal = document.getElementById('myModal');
+
+        var btn = document.getElementById("myBtn");
+
+        var span = document.getElementsByClassName("close")[0];
+
+        btn.onclick = function() {
+        modal.style.display = "block";
+        }
+
+        span.onclick = function() {
+        modal.style.display = "none";
+        }
+
+        window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+        }
+        </script>
+       </div>
+      <div>
+        <p style="font-family:'Arial'">Los pagos se realizan por medio de transferia o pago con tarjetas</p>
+      </div>
+      <div>
+        <h3 style="font-family: 'Courier New', Courier, monospace;">Certificados por:</h3>
+          <section class="certificados">
+
+            <img src="Imagen/iso9001.jpeg" alt="iso" width="180" height="150"/>
+            <img src="Imagen/sgs.png" alt="sqs" width="180" height="150"/>
+            <img src="Imagen/norma.png" alt="norma" width="250" height="150"/>
+
+          </section>
+          <section class="clientes">
+            <h3 style="font-family: 'Courier New', Courier, monospace;">Nuestros clientes:</h3>
+          <img src="Imagen/clinica.png" alt="clinica" width="180" height="150"/>
+          <img src="Imagen/solca.jpeg" alt="solca" width="180" height="150"/>
+          <img src="Imagen/buena.png" alt="buena" width="250" height="150"/>
+          <img src="Imagen/amalie.png" alt="amalie" width="250" height="150"/>
+
+        </section>
+      </div>
+      <div>
+
+
+    <button id="btn">Encuesta</button>
+    <form id="formu" onsubmit="return false" onreset="cerrar()" style="display: none">
+      <div>
+          <label>Nombres:</label>
+          <input type="text" name="nombres" id="nombres" class="formItem" placeholder="Ingrese aqui tu nombre"/>
+
+      </div>
+      <div>
+          <label>Email:</label>
+          <input type="email" name="correo" id="correo" class="formItem" />
+      </div>
+      <div>
+          <label>Sastifacion:</label>
+          <input class="gen" id="sast1" type="radio" name="sastisfacion" id="g1" value="1" />totalmente sastisfecho
+          <input class="gen" id="sast2" type="radio" name="sastisfacion" id="g2" value="0" />indiferente
+          <input class="gen" id="sast3" type="radio" name="sastisfacion" id="g3" value="-1" />totalmente insastifecho
+      </div>
+      <div>
+          <label>Recomendaria el servicio</label>
+          <select name="recomendacion" id="recomendacion" class="formItem">
+              <option value="0">Seleccione..</option>
+              <option value="1">SI, lo recomendaria</option>
+              <option value="2">No, lo recomendaria</option>
+
+          </select>
+
+      </div>
+
+      <div>
+          <label>Que encontro interesnate</label> <br>
+          Nuestros servicios <input type="checkbox" name="suscripcion1" value="1" id="suscripcion1"
+              class="formItem sus principal" />
+          Nuestras Ofertas <input type="checkbox" name="suscripcion2" value="2" id="suscripcion2"
+              class="formItem sus" />
+          Nuestro portal web <input type="checkbox" name="suscripcion3" value="3" id="suscripcion3"
+              class="formItem sus" />
+
+      </div>
+      <div>
+          <label>Comentarios</label> <br>
+          <textarea class="form-control" id="texto" rows="4" cols="100" class="formItem"></textarea>
+      </div>
+      <div class="text-center">
+
+          <input type="reset" class="btn btn-primary" value="Cancelar">
+          <input type="submit" class="btn btn-primary" value="Enviar">
+      </div>
+  </form>
+
+    <script>
+    var form = document.getElementById("formu");
+    form.addEventListener('submit', validar);
+
+    let cont=0;
+    function cerrar(){
+        form.style.display='none';
+    }
+    function validar(event) {
+        var valido = true;
+
+        var txtNombres = document.getElementById("nombres");//document.querySelector("input[name='nombres']"); // reotrna el primer input que tenga name ='nombres'
+        var selectEstado = document.getElementById("recomendacion");
+        var radiossastisfacion = document.getElementsByName("sastisfacion");//retorna un arreglo;
+        var txtemail = document.getElementById("correo");
+        var checkboxsSuscripcion = document.getElementsByClassName("sus");// retorna un arreglo
+
+
+        var letra = /^[a-z ,.'-]+$/i;// letrasyespacio   ///^[A-Z]+$/i;// solo letras
+        var correo = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+
+        limpiarMensajes();
+
+        //validacion para nombres
+        if (txtNombres.value === "") {
+            valido = false;
+            mensaje("Nombre es requerido ", txtNombres);
+        } else if (!letra.test(txtNombres.value)) {
+            valido = false;
+            mensaje("Nombre solo debe contener letras ", txtNombres);
+        } else if (txtNombres.value.length >100) {
+            valido = false;
+            mensaje("Nombre maximo 100 caracteres", txtNombres);
+        }
+        //validacion email
+        if (txtemail.value === "") {
+            valido = false;
+            mensaje("Email es requerido", txtemail);
+        } else if (!correo.test(txtemail.value)) {
+            valido = false;
+            mensaje("Email no es correcto ", txtemail);
+        }
+
+        //validacion select
+        if (selectEstado.value === null || selectEstado.value === '0') {
+            valido = false;
+            mensaje("EDebe seleccionar una opcion ", selectEstado);
+        }
+
+        //validacion radio button
+        var sel = false;
+        for (let i = 0; i < radiossastisfacion.length; i++) {
+            if (radiossastisfacion[i].checked) {
+                sel = true;
+              break;
+            }
+        }
+        if (!sel) {
+            valido = false;
+            mensaje("Debe seleccionar una opcion ", radiossastisfacion[0]);
+        }
+
+        sel = false;
+        cont=0;
+        for (let i = 0; i < checkboxsSuscripcion.length; i++) {
+            if (checkboxsSuscripcion[i].checked) {
+                cont++;
+                sel = true;
+                if (checkboxsSuscripcion[i].value === '2') {
+                    alert("Ha seleccionado el segundo checkbox ");
+                }
+               // break;
+            }
+        }
+        if (!sel) {
+            valido = false;
+            mensaje("Debe seleccionar una opcion", checkboxsSuscripcion[0]);
+        }
+        if (cont<2) {
+            valido = false;
+            mensaje("Debe seleccionar al menos dos opciones", checkboxsSuscripcion[0]);
+        }
+
+    }
+
+    function mensaje(cadenaMensaje, elemento) {
+        elemento.focus();
+
+        var nodoMensaje = document.createElement("span");
+        nodoMensaje.textContent = cadenaMensaje;
+       nodoMensaje.setAttribute("class", "mensajeError");
+
+       var nodoPadre = elemento.parentNode;
+       nodoPadre.appendChild(nodoMensaje);
+
+    }
+
+    function limpiarMensajes() {
+        var mensajes = document.querySelectorAll(".mensajeError");
+        for (let i = 0; i < mensajes.length; i++) {
+            mensajes[i].remove();// remueve o elimina un elemento de mi doc html
+        }
+
+    }
+          </script>
+          <script>
+        var btn = document.getElementById('btn');
+        btn.onclick = function() {
+        var form = document.getElementById('formu');
+        form.style.display= 'none'
+        if (form.style.display === 'none') {
+          form.style.display = 'block';
+        } else {
+          form.style.display = 'none';
+        }
+      };
+          </script>
+    </div>
+<footer >
+    <div class="container-footer-all">
+
+
+   <div class="container-body">
+     <div class="colunm1">
+        <h5> Mas informacion de la compania<br></h5>
+        <p>Mr. Cleanning es una pagina web de  Limpieza y Mantenimiento  desarrollada por estudiantes de la Universidad de Guayaquil.</p>
+     </div>
+
+       <div class="colunm2">
+        <h5>Redes sociales </h5>
+        <div class="row">
+            <img src="Imagen/fcbk.png" alt="facebok" width="50" height="50"/>
+            <label>Siguenos en facebook</label>
+        </div>
+        <div class="row">
+            <img src="Imagen/insta.jpeg" alt="insta" width="50" height="50"/>
+            <label>Siguenos en instagram</label>
+        </div>
+        <div class="row">
+            <img src="Imagen/wasap.png" alt="wasap" width="50" height="50"/>
+            <label>Siguenos en whatssapp</label>
+        </div>
+    </div>
+
+        <div class="colunm3">
+            <h5>Informacion con datos</h5>
+             <div class="row2">
+                <img src="Imagen/ubicacion.jpeg" alt="ubicacion" width="50" height="50"/>
+
+              <label>Gomez Rendon 2342 y Rumichaca</label>
+             </div>
+             <div class="row2">
+                <img src="Imagen/telefono.jpeg" alt="telefono" width="50" height="50"/>
+
+                <label>+593-90070097</label>
+               </div>
+             <div class="row2">
+                <img src="Imagen/correo.jpeg" alt="correo" width="50" height="50"/>
+
+                <label>mrcleanning@gmail.com</label>
+               </div>
+        </div>
+
+
+    </div>
+
+</div>
+<div class="container-footer">
+    <div class="copyrigth">
+      Elaborado por:Baque Hamilton |<a ></a>
+    </div>
+    <div class=" information">
+        <a href="">Informacion de compañia</a>|
+        <a href="">Privacidad y Politica |Terminos y condiciones</a>
+
+    </div>
+
+</div>
+
+
+</footer>
+
+</body>
+</html>
